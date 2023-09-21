@@ -17,8 +17,19 @@
 </head>
 
 <body>
-	<div id="side"> </div>
+
+	<!-- Sidebar -->
+	<div id="side"> 
+		<!-- embedded html file-->
+		<iframe src="HTMLelements.html" frameborder="0" height="100%"></iframe>
+		
+
+	</div>
+
+	<!-- Practice Area -->
 	<div class="practicearea">
+
+		<!-- Aug 30 -->
 		<div class="practice">
 			<h2>August 30 practice</h2>
 		  <p>This is my practice on p tag </p>
@@ -27,20 +38,299 @@
 
 		</div>
 
-
+		<!-- Sept 6 -->
 		<div class="practice">
+			<h2>September 6 Practice </h2>
+			<h3>h3 heading</h3>
+			<!-- blocklevel = for structure -->
+			<!-- This is a blocklevel element ordered list ol -->
+			<ol>
+				<!-- this is a list li -->
+				<!-- inline-level element = for decoration -->
+				<li> Inline element
+					<!-- blocklevel element unordered list ul -->
+					<!-- also a list in a list -->
+					<ul>
+						<li> &lt;img&gt; </li>
+						<li> &lt;br&gt; </li>
+						<li> &lt;strong&gt; </li>
+					</ul>
+				</li>
+				<li> Block level of elements
+					<ul>
+						<li> &lt;ol&gt; </li>
+						<li> &lt;li&gt; </li>
+						<li> &lt;p&gt; </li>
+					</ul>
+				</li>
+			</ol>
+
+			<!-- inline-level elements -->
+			<p> This is block level <b> element </b>. del is an inline 
+				<del>element</del>
+			</p>
+			<p> How about image? <img src="img/facebook.png" alt="facebook"></p>
+		</div>
+
+		<!-- Sept 11 -->
+		<div class="practice">
+			<h1>September 11 Class Work</h1>
+			<p>
+				<!-- How to make a link-->
+				<a href="https://www.usca.edu">USCA Website</a>
+				<a href="doc/imageMap.html" target="_blank">Image Map File</a>
+				<a href="https://blackboard.usca.edu/?new_loc=%2Fultra%2Fstream">Blackboard</a>
+
+				<!-- How to make an image into a link-->
+				<a href="https://www.mit.edu">
+					<img src="img/plus.png" alt="mit link">
+
+				<a href="img/google.png">
+					<img src="img/google.png" alt="google link">
+				</a>
+			</p>
+
+			<!-- Creating a table of rows and columns-->
+			<table border="1">
+				<!-- Table Row-->
+				<tr>
+					<!-- Table Column-->
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+				
+				<!-- You can extend the cursor by control + alt + ^ or v-->
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				
+			</table>
 
 		</div>
 
-
+		<!-- Sept 13 -->
 		<div class="practice">
+			<h1>September 13 Work</h1>
+			<table border="1">
+				<!-- Table Row-->
+				<tr>
+					<!-- Table Column that spans to 3 columns by deleting other columns-->
+					<td colspan="3">1</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td rowspan="3">4</td>
+					<td>5</td>
+				</tr>
+				
+				<!-- You can extend the cursor by control + alt + ^ or v-->
+				<tr>
+					<td>10</td>
+					
+					<td>207</td>
+				</tr>
+				<tr>
+					<td>111</td>
+					
+					<td>222</td>
+				</tr>
+				<tr>
+					<td>444</td>
+					
+					<td>555</td>
+				</tr>
+				
+			</table>
 
+			<!-- In class table exercise -->
+			<h2>Required In class exercise</h2>
+			<table border="1">
+				<tr>
+					<td colspan="4">Temperature Distribution in Jan - April 2015 (F)</td>
+				</tr>
+				<tr><td>Month</td><td>High</td><td>Low</td><td>Average</td></tr>
+				<tr><td>January</td><td>48</td><td>36</td><td>40</td></tr>
+				<tr><td>February</td><td>49</td><td>37</td><td rowspan="2">43</td></tr>
+				<tr><td>March</td><td>52</td><td>39</td></tr>
+				<tr><td>April</td><td>58</td><td>43</td><td>47</td></tr>
+			</table>
+
+			<!-- Forms of Input Elements-->
+			<h2>Form Practice</h2>
+			<form action="">
+				<p>
+					<!-- single line text box for name -->
+					Name: <input type="text" name="fullname">
+				</p>
+				<p>
+					<!-- single line password box -->
+					Password: <input type="password" name="pwd">
+				</p>
+				<p>
+					<!-- single line email box -->
+					Email: <input type="email" name="email">
+				</p>
+				<p>What is your favorite color
+					<input type="checkbox" name="colors" value="red">Red
+					<input type="checkbox" name="colors" value="blue">Blue
+					<input type="checkbox" name="colors" value="green">Green
+					<input type="checkbox" name="colors" value="yellow">Yellow
+				</p>
+				<p>
+					<!-- submit button -->
+					<!-- value displays text on the button -->
+					<input type="submit" value="click to submit">
+				</p>
+			</form>
+		</div>
+
+		<!-- Sept 18 -->
+		<div class="practice">
+			<h1>September 18 Practice</h1>
+			<h2>Form Practice Cont.</h2>
+
+			<!-- Form -->
+			<form action="">
+			<!-- fieldset design box -->
+			<fieldset>
+				<legend>Test the fieldset</legend>
+				<!-- Radio Button -->
+				<p>Please input the genre you prefer: </p>
+				<p><input type="radio" name="genre" value="rock">Rock</p>
+				<p><input type="radio" name="genre" value="pop">Pop</p>
+				<p><input type="radio" name="genre" value="jazz">Jazz</p>
+				<!-- TextArea -->
+				<p> Please enter your feedback: </p>
+				<p>
+					<textarea name="feedback" cols="30" rows="10">
+						No comments
+					</textarea>
+				</p>
+				<!-- Drop Down Box List with 4 displayed and multiple selected -->
+				<p>Select your favorite browser: </p>
+				<p>
+					<select name="browser" size="4" multiple>
+						<option value="FireFox">FireFox</option>
+						<option value="Chrome">Chrome</option>
+						<!-- Option with no value -->
+						<option>      Safari</option>
+						<option value="ie">Edge</option>
+
+					</select>
+				</p>
+			</fieldset>
+
+				<!-- 2 Choices for IMG Button -->
+				<p>
+					Image buton for fun
+					<!-- IMG is button -->
+					<input type="image" src="img/subscribe.jpg">
+					<!-- IMG in button -->
+					<button><img src="img/add.gif" alt="add">Add</button>
+				</p>
+
+				<!-- Form type: color, date, datetime-->
+				<p>
+					HTML 5 Features
+					<input type="color" name="color">
+					<input type="date" name="date">
+					<input type="datetime-local" name="datetime">
+				</p>
+
+				<!-- Submit and reset button -->
+				<p>
+					<input type="submit" value="Submit Answer">
+					<input type="reset" value="Reset Answer">
+				</p>
+			</form>
 
 		</div>
 
+		<!-- Sept 20 -->
 		<div class="practice">
+			<h1>September 20 HTML 5 Features</h1>
+			<h2>Form Practice - more</h2>
 
+			<!-- Form: Email, Tel, Number, Range, Submit -->
+			<form action="">
+				<p>Email*: <input type="email" placeholder="xx@xx.com" name="email" autofocus></p>
+				<p>Tel: <input type="tel" placeholder="xxx-xxx-xxxx" pattern="\(\d{3}\)-\d{3}-\d{4}" ></p>
+				<p>Favorite Scores: 0<input type="range" name="score" min="0" max="10" >10</p>
+				<p>Rating: <input type="number" name="rating" min="0" max="5"></p>
+				<p>Submit: <input type="submit" value="submit" formnovalidate></p>
+				
+			</form>
+			<p>Video:</p>
+			<!-- Embedded Youtube Video-->
+			<iframe src="https://www.youtube.com/embed/_MMga99JDxI?si=lWDdgJ53ux9HxohQ" frameborder="1" height="50%"></iframe>
+			<iframe src="video/puppy.mp4" preload controls loop>A puppy video</iframe>
+			<p>Map:</p>
+			<!-- Embedded Map-->
+			<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDxP_piMOZoX9xRNJxRBioVZKfQ--izWrc&q=University+of+South+Carolina+,Columbia+SC" frameborder="0" width="600" height="750"></iframe>
 
+			<!-- Try it in class exercise-->
+			<form action="">
+				<p><h2>Create a New Account</h2></p>
+				<p><h3>Its free and always will be.</h3></p>
+				<p><input type="text" name="firstname" placeholder="First name">
+				<input type="text" name="lastname" placeholder="Last name"></p>
+				<p><input type="email" name="email" placeholder="Email address"></p>
+				<p><input type="password" name="password" placeholder="Password"></p>
+				<p><h3>Birthday</h3></p>
+				<p><select name="birthday month">
+						<option value="January">January</option>
+						<option value="February">February</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select>
+					<select name="birthday day">
+						<option value="00">00</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="other">Other</option>
+					</select>
+					<select name="birthday year">
+						<option value="2023">2013</option>
+						<option value="2022">2022</option>
+						<option value="2021">2021</option>
+						<option value="2020">2020</option>
+						<option value="other">other</option>
+					</select>
+				</p>
+				<p>
+					<input type="radio" name="male" value="male">Male
+					<input type="radio" name="female" value="female">Female
+				</p>
+				<p><input type="image" src="data:image/jpeg;base64,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" height="50" width="150"></p>
+			</form>
 		</div>
 
 	</div>
